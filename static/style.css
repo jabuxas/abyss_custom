@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Lilex;
+    src: url(./fonts/Lilex-Regular.ttf) format("truetype");
+}
+
+body {
+    font-family: Lilex, sans-serif;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+button {
+    font-family: Lilex, sans-serif;
+    padding: 0.75rem 1.5rem;
+    background-color: #66fcf1;
+    border: none;
+    color: #1f2833;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a29e;
+}
+
+footer {
+    position: relative;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #777;
+    text-align: center;
+}
+
+footer a {
+    color: #66fcf1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+textarea::placeholder {
+    color: #bbb;
+}
+
+button {
+    border-radius: 0;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #66fcf1;
+}
+
+button[type="submit"] {
+    border-radius: 1rem;
+    background-color: #66fcf1;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #55bbbe;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+        background-color: #66fcf1;
+    }
+
+    textarea {
+        height: 120px;
+    }
+
+    div {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    button:first-child {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    button:last-child {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+}
